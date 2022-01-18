@@ -17,8 +17,7 @@
 #define MED_L 5
 #define FUN_L 6
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+
 /*       COLEMAK DH 34 KEY POSITIONS FOR MODS
  * ╭─────────────────────╮ ╭─────────────────────╮
  * │  0   1   2   3   4  │ │  5   6   7   8   9  │
@@ -30,6 +29,10 @@
  *         │ 30  31  32  │ │ 33  34  35  │
  *         ╰─────────────╯ ╰─────────────╯           
  */
+
+// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
+&lt { quick_tap_ms = <200>; };
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -42,9 +45,8 @@
         };
     };
 
-        keymap {
-                compatible = "zmk,keymap";
-/ {
+    keymap {
+        compatible = "zmk,keymap";
 
 //             COLEMAK DH KEY POSITIONS
 // ╭─────────────────────╮ ╭─────────────────────╮
@@ -64,7 +66,7 @@
 //         ╰─────────────╯ ╰─────────────╯   
 //         │ MED NAV OTH │ │ SYM NUM FUN │
 //         ╰─────────────╯ ╰─────────────╯   
-                default_layer {
+            default_layer {
                 label = "Default";
                         bindings = <
    &kp Q &kp W &kp F &kp P &kp B                        &kp J &kp L &kp U &kp Y &kp SEMI
@@ -82,7 +84,7 @@
 //         ╰─────────────╯ ╰─────────────╯
 //         │     NAV     │ │             │
 //         ╰─────────────╯ ╰─────────────╯         
-                nav_layer {
+            nav_layer {
                 label = "Navigation";
                         bindings = <
     &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
@@ -100,7 +102,7 @@
 //         ╰─────────────╯ ╰─────────────╯     
 //         │             │ │ SYM         │
 //         ╰─────────────╯ ╰─────────────╯   
-                sym_layer {
+            sym_layer {
                 label = "Symbol";
                     bindings = <
     &kp LBRC  &kp AMPS &kp STAR  &kp KP_LPAR &kp RBRC   &trans &trans &trans &trans &trans
@@ -118,7 +120,7 @@
 //         ╰─────────────╯ ╰─────────────╯   
 //         │             │ │     NUM     │
 //         ╰─────────────╯ ╰─────────────╯   
-                num_layer {
+            num_layer {
                 label = "Number";
                     bindings = <
     &kp LBKT  &kp N7  &kp N8 &kp N9 &kp RBKT    &trans &trans &trans &trans &trans    
@@ -136,7 +138,7 @@
 //         ╰─────────────╯ ╰─────────────╯   
 //         │         OTH │ │             │
 //         ╰─────────────╯ ╰─────────────╯    
-                other_layer {
+            other_layer {
                 label = "Other";
                     bindings = <
     &trans &trans &trans &trans &trans    &trans     &reset   &bootloader  &trans       &bt BT_CLR
@@ -154,7 +156,7 @@
 //         ╰─────────────╯ ╰─────────────╯   
 //         │ MED         │ │             │
 //         ╰─────────────╯ ╰─────────────╯   
-                media_layer {
+            media_layer {
                 label = "Media";
                     bindings = <
 &trans	   &trans     &trans      &trans          &trans       &trans           &trans         &trans       &trans       &trans
@@ -172,7 +174,7 @@
 //         ╰─────────────╯ ╰─────────────╯   
 //         │             │ │         FUN │
 //         ╰─────────────╯ ╰─────────────╯   
-                fun_layer {
+            fun_layer {
                 label = "Fun";
                     bindings = <
     &kp F12     &kp F7     &kp F8      &kp F9     &kp PSCRN         &trans          &trans         &trans      &trans     &trans

@@ -72,7 +72,7 @@
    &kp Q &kp W &kp F &kp P &kp B                        &kp J &kp L &kp U &kp Y &kp SEMI
    &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &kp M &hm RSHFT N &hm RCTRL E &hm RALT I &hm RGUI O     
    &kp Z &kp X &kp C &kp D &kp V                        &kp K &kp H &kp COMMA &kp DOT &kp FSLH
-   &lt 5 ESC &lt 1 BSPC &lt 2 TAB                       &lt 4 RET &lt SPACE 3 &lt 6 DEL
+   &lt 5 ESC &lt 1 BSPC &lt 2 TAB                       &lt 4 RET &lt 3 SPACE &lt 6 DEL 
                         >;
                 };
 
@@ -82,7 +82,7 @@
 // │                     │ │ INS HM  PGD PGU END │
 // ╰───────╮             │ │ LWN     RWN ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯
-//         │     NAV     │ │             │
+//         │ med NAV oth │ │ sym num fun │
 //         ╰─────────────╯ ╰─────────────╯         
             nav_layer {
                 label = "Navigation";
@@ -100,7 +100,7 @@
 // │  ~   !   @   #  "│" │ │                     │
 // ╰───────╮  (   )   _  │ │             ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯     
-//         │             │ │ SYM         │
+//         │ med nav oth │ │ SYM num fun │
 //         ╰─────────────╯ ╰─────────────╯   
             sym_layer {
                 label = "Symbol";
@@ -118,7 +118,7 @@
 // │  `   1   2   3   \  │ │                     │
 // ╰───────╮  .   0   -  │ │             ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
-//         │             │ │     NUM     │
+//         │ med nav oth │ │ sym NUM fun │
 //         ╰─────────────╯ ╰─────────────╯   
             num_layer {
                 label = "Number";
@@ -136,7 +136,7 @@
 // │                     │ │ CPW     BT0 BT1 BT2 │
 // ╰───────╮             │ │             ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
-//         │         OTH │ │             │
+//         │ med nav OTH │ │ sym num fun │
 //         ╰─────────────╯ ╰─────────────╯    
             other_layer {
                 label = "Other";
@@ -154,7 +154,7 @@
 // │                     │ │                     │
 // ╰───────╮             │ │ STP PAU MUT ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
-//         │ MED         │ │             │
+//         │ MED nav oth │ │ sym num fun │
 //         ╰─────────────╯ ╰─────────────╯   
             media_layer {
                 label = "Media";
@@ -172,7 +172,7 @@
 // │ F10 F1  F2  F3  PBR │ │                     │
 // ╰───────╮ APP SPC TAB │ │             ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
-//         │             │ │         FUN │
+//         │ med nav oth │ │ sym num FUN │
 //         ╰─────────────╯ ╰─────────────╯   
             fun_layer {
                 label = "Fun";

@@ -64,7 +64,7 @@
 // │                     │ │                     │
 // ╰───────╮ ESC BK_ TAB │ │ RET SPC DEL ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
-//         │ MED NAV OTH │ │ SYM NUM FUN │
+//         │ MED NAV @OTH │ │ SYM NUM FUN │
 //         ╰─────────────╯ ╰─────────────╯   
             default_layer {
                 label = "Default";
@@ -72,12 +72,12 @@
    &kp Q &kp W &kp F &kp P &kp B                        &kp J &kp L &kp U &kp Y &kp SEMI
    &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &kp M &hm RSHFT N &hm RCTRL E &hm RALT I &hm RGUI O     
    &kp Z &kp X &kp C &kp D &kp V                        &kp K &kp H &kp COMMA &kp DOT &kp FSLH
-   &lt 5 ESC &lt 1 BSPC &lt 2 TAB                       &lt 4 RET &lt 3 SPACE &lt 6 DEL 
+   &lt 5 ESC &lt 1 BSPC &hm 2 TAB                       &lt 4 RET &lt 3 SPACE &lt 6 DEL 
                         >;
                 };
 
 // ╭─────────────────────╮ ╭─────────────────────╮
-// │                     │ │ RDO UND CUT CPY PST │
+// │                     │ │ RDO PST CPY CUT UND │
 // │                     │ │ CAP ⬅   ⬇   ⬆  ⮕  │
 // │                     │ │ INS HM  PGD PGU END │
 // ╰───────╮             │ │ LWN     RWN ╭───────╯
@@ -87,9 +87,9 @@
             nav_layer {
                 label = "Navigation";
                         bindings = <
-    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-    &trans &trans &trans &trans &trans    &trans &kp LARW &kp DARW &kp UARW &kp RARW
-    &trans &trans &trans &trans &trans    &trans &kp HOME &kp PG_DN &kp PG_UP &kp END
+    &trans &trans &trans &trans &trans    &kp RCTRL(Y) &kp RCTRL(V) &kp RCTRL(C) &kp RCTRL(X) &kp RCTRL(Z)
+    &trans &trans &trans &trans &trans    &kp CAPS &kp LARW &kp DARW &kp UARW &kp RARW
+    &trans &trans &trans &trans &trans    &kp INS &kp HOME &kp PG_DN &kp PG_UP &kp END
                   &trans &trans &trans    &kp LC(LG(LEFT)) &none &kp LC(LG(RIGHT))
                         >; 
                 };

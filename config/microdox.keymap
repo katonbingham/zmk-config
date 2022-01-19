@@ -72,7 +72,7 @@
    &kp Q &kp W &kp F &kp P &kp B                        &kp J &kp L &kp U &kp Y &kp SEMI
    &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &kp M &hm RSHFT N &hm RCTRL E &hm RALT I &hm RGUI O     
    &kp Z &kp X &kp C &kp D &kp V                        &kp K &kp H &kp COMMA &kp DOT &kp FSLH
-   &lt 5 ESC &lt 1 BSPC &hm 2 TAB                       &lt 4 RET &lt 3 SPACE &lt 6 DEL 
+   &lt 5 ESC &lt 1 BSPC &lt 2 TAB                       &lt 4 RET &lt 3 SPACE &lt 6 DEL 
                         >;
                 };
 

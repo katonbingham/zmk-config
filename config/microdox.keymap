@@ -32,7 +32,7 @@
     behaviors {
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
+            label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             tapping_term_ms = <150>; 
             quick_tap_ms = <300>;
@@ -43,7 +43,7 @@
         }; 
         rhm: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
+            label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping_term_ms = <150>; 
@@ -77,10 +77,10 @@
             default_layer {
                 label = "Default";
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T                        &kp Y &kp U &kp I &kp O &kp P
+   &kp Q &kp W &kp E &kp R &kp T                            &kp Y &kp U &kp I &kp O &kp P
    &lhm LGUI A &lhm LALT S &lhm LCTRL D &lhm LSHFT F &kp G  &kp H &rhm RSHFT J &rhm RCTRL K &rhm RALT L &rhm RGUI SQT     
-   &kp Z &kp X &kp C &kp V &kp B                        &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-   &lt 3 ESC &lt 1 BSPC &lt 2 TAB                       &lt 5 RET &lt 4 SPACE &lt 6 DEL
+   &kp Z &kp X &kp C &kp V &kp B                            &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+        &lt 3 ESC &lt 1 BSPC &lt 2 TAB                      &lt 5 RET &lt 4 SPACE &lt 6 DEL
                         >;
                 };
 

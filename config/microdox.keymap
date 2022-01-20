@@ -18,7 +18,7 @@
 #define FUN_L 6
 
 
-/*       COLEMAK DH 36 KEY POSITIONS FOR MODS
+/*               36 KEY POSITIONS
  * ╭─────────────────────╮ ╭─────────────────────╮
  * │  0   1   2   3   4  │ │  5   6   7   8   9  │
  * │ 10  11  12  13  14  │ │ 15  16  17  18  19  │
@@ -45,7 +45,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-//             COLEMAK DH KEY POSITIONS
+//               QWERTY KEY POSITIONS
 // ╭─────────────────────╮ ╭─────────────────────╮
 // │  Q   W   E   R   T  │ │  Y   U   I   O   P  │
 // │  A   S   D   F   G  │ │  H   J   K   L   '  │

@@ -33,12 +33,12 @@
         compatible = "zmk,combos";
         combo_lgui{
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <20 21>;
             bindings = <&kp LGUI>;
         }; 
         combo_rgui{
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <28 29>;
             bindings = <&kp RGUI>;
         };
     };
@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping_term_ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -67,9 +67,9 @@
 //         ╰─────────────╯ ╰─────────────╯            
 //            MIRYOKU HOMEROW + THUMBS    
 // ╭─────────────────────╮ ╭─────────────────────╮
-// │ vLGUIv              │ │              vLGUIv │
-// │     ALT CTL SHF     │ │     SHF CTL ALT     │
 // │                     │ │                     │
+// │     ALT CTL SHF     │ │     SHF CTL ALT     │
+// │ vLGUIv              │ │              vLGUIv │
 // ╰───────╮ ESC BK_ TAB │ │ RET SPC DEL ╭───────╯
 //         ╰─────────────╯ ╰─────────────╯   
 //         │ MED NAV OTH │ │ SYM NUM FUN │

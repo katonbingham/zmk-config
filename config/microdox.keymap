@@ -52,7 +52,7 @@
         tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <11 12 13>;    // <---[[right-hand keys]]
+        hold-trigger-key-positions = <16 17 18>;    // <---[[right-hand keys]]
         };
 
     rh_pht: right_hand_positional_hold_tap {
@@ -63,7 +63,7 @@
         tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <16 17 18>;    // <---[[right-hand keys]]
+        hold-trigger-key-positions = <11 12 13>;    // <---[[right-hand keys]]
         };
     };
 
